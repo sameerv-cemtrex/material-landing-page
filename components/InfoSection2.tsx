@@ -1,12 +1,15 @@
-import React from "react";
+import { useGSAP } from "@gsap/react";
+import React, { useRef } from "react";
+import gsap from "gsap";
+gsap.registerPlugin(useGSAP);
 
 const InfoSection2 = () => {
   return (
-    <div className="flex items-center py-8 mt-10">
+    <div className="flex items-center py-8 mt-10 info-container-1">
       <img
         alt="info section 2"
         src="/images/info-section-image2.png"
-        className="w-1/2 px-12"
+        className="w-1/2 px-12 info1"
       />
 
       <div className="w-1/2 px-8">
