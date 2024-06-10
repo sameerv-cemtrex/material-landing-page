@@ -3,9 +3,9 @@ import { Button } from "@mui/material";
 
 const Hero = () => {
   return (
-    <div className="h-[89vh] flex items-center ">
-      <div className="w-1/2">
-        <h1 className="text-4xl font-bold mb-6">
+    <div className="h-[98vh] md:h-[89vh] flex items-center px-6 md:px-0 bg-violet-100 md:bg-transparent">
+      <div className="md:w-1/2 text-center md:text-start">
+        <h1 className="text-4xl  font-bold mb-6">
           Unleash Your Creativity with Effortless Color Exploration
         </h1>
         <p className="text-lg mb-8">
@@ -16,7 +16,7 @@ const Hero = () => {
           powerful tool.
         </p>
 
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3 justify-center md:justify-start">
           <Button variant="contained" color="primary">
             Purchase UI Kit
           </Button>
@@ -29,7 +29,7 @@ const Hero = () => {
       <img
         src="/images/color-picker-hero.png"
         alt="Color Picker Hero"
-        className="absolute -z-10 top-0 right-0 h-screen"
+        className="absolute hidden md:block -z-10 top-0 right-0 h-screen"
       />
     </div>
   );

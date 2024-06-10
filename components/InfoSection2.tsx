@@ -5,16 +5,16 @@ gsap.registerPlugin(useGSAP);
 
 const InfoSection2 = () => {
   return (
-    <div className="flex items-center py-8 mt-10 info-container-1">
+    <div className="md:flex items-center py-8 mt-10 info-container-1">
       <img
         alt="info section 2"
         src="/images/info-section-image2.png"
-        className="w-1/2 px-12 info1"
+        className="md:w-1/2 px-12 py-8 md:py-0 info1"
       />
 
-      <div className="w-1/2 px-8">
+      <div className="md:w-1/2 px-8 text-center md:text-start">
         <h3 className="text-2xl font-semibold">Effortless Color Exploration</h3>
-        <p className="mt-4 w-3/4    ">
+        <p className="mt-4 md:w-3/4    ">
           Our intuitive color picker tool empowers you to discover and
           experiment with a vast spectrum of colors seamlessly. Unlock your
           creativity and find the perfect hues for your projects with ease.

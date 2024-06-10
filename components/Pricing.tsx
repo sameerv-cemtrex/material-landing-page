@@ -2,8 +2,8 @@ import React from "react";
 import { Button } from "@mui/material";
 const Pricing = () => {
   return (
-    <div className="py-16 mt-10 flex flex-col items-center justify-center relative">
-      <div className="bg-blue-50 absolute -z-10 inset-0 max-2xl:-inset-x-20" />
+    <div className="py-16 mt-10 flex bg-blue-50 sm:bg-transparent flex-col items-center justify-center relative">
+      <div className="bg-blue-50 hidden md:block absolute -z-10 inset-y-0 max-2xl:-inset-x-20" />
       <h3 className="text-2xl font-semibold text-center mb-3">
         A Price To Suit Everyone
       </h3>

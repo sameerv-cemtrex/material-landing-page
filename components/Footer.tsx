@@ -10,9 +10,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className="relative py-8">
-      <div className="bg-blue-100 absolute -z-10 inset-y-0 -inset-x-20" />
-      <div className="py-8 flex items-center justify-between border-b border-gray-300">
+    <div className="relative py-8 bg-blue-100 md:bg-transparent">
+      <div className="bg-blue-100 absolute -z-10 inset-y-0 md:-inset-x-20" />
+      <div className="py-8 flex items-center justify-between border-b border-gray-300 px-6 md:px-0">
         <p className="text-gray-400">©2023 CXR Agency</p>
         {/* <p className="text-2xl text-blue-950 font-bold">Landing</p> */}
         <Button
@@ -24,7 +24,7 @@ const Footer = () => {
         </Button>
       </div>
 
-      <div className="flex justify-between items-center p-4">
+      <div className="flex flex-col md:flex-row justify-between items-center p-4">
         <ul className="flex items-center space-x-6 text-gray-400">
           <li>
             <Button>Home</Button>

@@ -3,8 +3,8 @@ import { FaSwatchbook, FaEye, FaCodeBranch, FaDownload } from "react-icons/fa";
 
 const InfoSection1 = () => {
   return (
-    <div className="flex flex-col md:flex-row items-end py-24 mb-12">
-      <div className="md:w-1/2 mb-8 md:mb-0">
+    <div className="flex flex-col-reverse md:flex-row items-end py-24 mb-12">
+      <div className="md:w-1/2 mb-8 md:mb-0 px-6 md:px-0">
         <h3 className="font-semibold text-2xl mb-3">
           Powerful Color Picker for Your Design Needs
         </h3>
@@ -38,7 +38,7 @@ const InfoSection1 = () => {
       <img
         alt="info section 1"
         src="/images/info-section-image1.png"
-        className="w-[40%] px-8"
+        className="md:w-[40%] px-8 py-8 md:py-0"
       />
     </div>
   );
