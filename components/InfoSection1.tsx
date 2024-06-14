@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { FaSwatchbook, FaEye, FaCodeBranch, FaDownload } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const InfoSection1 = () => {
   return (
@@ -35,11 +37,18 @@ const InfoSection1 = () => {
           </li>
         </ul>
       </div>
-      <img
+      {/* <motion.div
+      > */}
+      <motion.img
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 1 }}
         alt="info section 1"
         src="/images/info-section-image1.png"
         className="md:w-[40%] px-8 py-8 md:py-0"
       />
+      {/* </motion.div> */}
     </div>
   );
 };

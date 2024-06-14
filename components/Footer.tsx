@@ -14,7 +14,6 @@ const Footer = () => {
       <div className="bg-blue-100 absolute -z-10 inset-y-0 md:-inset-x-20" />
       <div className="py-8 flex items-center justify-between border-b border-gray-300 px-6 md:px-0">
         <p className="text-gray-400">©2023 CXR Agency</p>
-        {/* <p className="text-2xl text-blue-950 font-bold">Landing</p> */}
         <Button
           variant="contained"
           sx={{ background: "#111B47", py: 1.2, px: 3, color: "#fff" }}

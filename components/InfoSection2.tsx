@@ -1,12 +1,18 @@
+"use client";
 import { useGSAP } from "@gsap/react";
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 import gsap from "gsap";
 gsap.registerPlugin(useGSAP);
 
 const InfoSection2 = () => {
   return (
-    <div className="md:flex items-center py-8 mt-10 info-container-1">
-      <img
+    <div className="md:flex items-center py-16 my-16 info-container-1">
+      <motion.img
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.4, delay: 1.2 }}
+        viewport={{ once: true }}
         alt="info section 2"
         src="/images/info-section-image2.png"
         className="md:w-1/2 px-12 py-8 md:py-0 info1"

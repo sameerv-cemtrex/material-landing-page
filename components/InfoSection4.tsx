@@ -1,9 +1,15 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const InfoSection4 = () => {
   return (
-    <div className="md:flex items-center py-8 mt-10 info-container-3">
-      <img
+    <div className="md:flex items-center py-16 my-16 info-container-3">
+      <motion.img
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.4, delay: 1 }}
+        viewport={{ once: true }}
         alt="info section 2"
         src="/images/info-section4.png"
         className="md:w-1/2 px-12 py-8 md:py-0 info3"
